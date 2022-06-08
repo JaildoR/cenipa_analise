@@ -1,74 +1,33 @@
-# Data analysis
-- Document here the project: cenipa_analise
-- Description: Project Description
-- Data Source:
-- Type of analysis:
+# Cenipa_data
 
-Please document the project the better you can.
+Este repositório contém um conjunto de insights relacionado a segurança na aviação brasileira obtidos com base na exploração da base dados "Ocorrências Aeronáuticas na Aviação Civil Brasileira" disponibilizadas pelo Centro de Investigação e Prevenção de Acidentes Aeronáuticos (CENIPA). É importante notar, porém, que foram utilizados outros bancos de dados ou informações para algumas para formular algumas hipóteses a exemplo de:
 
-# Startup the project
+* 
 
-The initial setup.
+# Análise exploratória
 
-Create virtualenv and install the project:
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv ~/venv ; source ~/venv/bin/activate ;\
-    pip install pip -U; pip install -r requirements.txt
-```
+Qual parte do voo é mais perigosa?
 
-Unittest test:
-```bash
-make clean install test
-```
+Existe uma época do ano ou dia da semana mais provável para ocorrências aeronaúticas? e acidentes?
 
-Check for cenipa_analise in gitlab.com/{group}.
-If your project is not set please add it:
+Existem caractéristicas de um avião que geram mais ocorrências ou acidentes?
 
-- Create a new project on `gitlab.com/{group}/cenipa_analise`
-- Then populate it:
+Existe uma relação direta entre essas características entre incidentes e acidentes
 
-```bash
-##   e.g. if group is "{group}" and project_name is "cenipa_analise"
-git remote add origin git@github.com:{group}/cenipa_analise.git
-git push -u origin master
-git push -u origin --tags
-```
+Quais as fabricantes com maior número de defeitos registrados?
 
-Functionnal test with a script:
+Quais são as maiores causas de ocorrências e, eventualmente, queda de aviões?
 
-```bash
-cd
-mkdir tmp
-cd tmp
-cenipa_analise-run
-```
+Existe uma tendência nas ocorrências? e nas fatalidades???
 
-# Install
+Quantos incidentes com fatalidades (morte de passageiros e tripulação) temos registro nos últimos 10 anos?
 
-Go to `https://github.com/{group}/cenipa_analise` to see the project, manage issues,
-setup you ssh public key, ...
 
-Create a python3 virtualenv and activate it:
 
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
-```
+# Requisitos
 
-Clone the project and install it:
+Python 3.8.12
 
-```bash
-git clone git@github.com:{group}/cenipa_analise.git
-cd cenipa_analise
-pip install -r requirements.txt
-make clean install test                # install and test
-```
-Functionnal test with a script:
+Pandas
 
-```bash
-cd
-mkdir tmp
-cd tmp
-cenipa_analise-run
-```
+Matplotlib
