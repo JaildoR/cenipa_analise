@@ -4,7 +4,7 @@ Este repositório contém um conjunto de insights relacionado a segurança na av
 
 # Requisitos
 
--numpy>=1.18.5
+numpy>=1.18.5
 
 pandas>=1.3.5
 
